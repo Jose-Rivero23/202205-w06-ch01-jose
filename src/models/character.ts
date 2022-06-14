@@ -8,7 +8,7 @@ export interface iCharacter {
     name: string;
     family: string;
     age: number;
-    category: 'king' | 'knight' | 'counselor' | 'squire';
+    category: 'king' | 'knight' | 'counselor' | 'squire' | '';
     message: string;
     kingdomYears?: number;
     weapon?: string;
@@ -16,6 +16,7 @@ export interface iCharacter {
     submission?: number;
     lord?: Knight;
     chief?: Character;
+    lifeState?: boolean;
 }
 
 export type anyCharacter = Character | King | Knight | Counselor | Squire;
